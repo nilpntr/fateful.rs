@@ -30,6 +30,10 @@ macro_rules! fatal {
   };
 }
 
+#[macro_export]
+/// Returns a prefix of Error:
+macro_rules! err_prefix { () => {"Error: {}"} }
+
 #[cfg(test)]
 mod tests {
     use super::*;
